@@ -1,0 +1,89 @@
+.hero-section {
+  background: #111;
+  color: #fff;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 0 60px 5vw;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-name {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  animation: fadeInLeft 1s ease;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #ffc107;
+  animation: fadeInLeft 1.5s ease;
+}
+
+.animated-text {
+  display: inline-block;
+  animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffc107;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  animation: fadeInUp 2s ease;
+}
+
+.animated-desc {
+  display: inline-block;
+  animation: fadeInUp 2s ease, colorChange 6s infinite alternate;
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: #ffc107; }
+  50% { border-color: transparent; }
+}
+
+@keyframes colorChange {
+  0% { color: #e0e0e0; }
+  100% { color: #ffc107; }
+}
+
+@media (max-width: 700px) {
+  .hero-section {
+    padding: 40px 0 40px 4vw;
+  }
+  .hero-name {
+    font-size: 2rem;
+  }
+  .hero-title {
+    font-size: 1.1rem;
+  }
+  .hero-content {
+    max-width: 95vw;
+  }
+}
