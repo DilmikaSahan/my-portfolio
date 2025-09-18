@@ -1,11 +1,9 @@
 import React from 'react';
 import './ProjectCard.css';
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onViewMore }) => {
   const handleViewMore = () => {
-    // Navigate to project detail page - we'll implement routing later
-    console.log(`Navigate to project ${project.id} detail page`);
-    // For now, you can implement this with React Router
+    onViewMore(project.id);
   };
 
   const handleGithubClick = (e) => {

@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
+import PJ_settupotha from '../ProjectModals/PJ_settupotha';
 import './Projects.css';
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -18,15 +21,23 @@ const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
+  const handleProjectView = (projectId) => {
+    setSelectedProject(projectId);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
   // Sample project data - you can replace this with your actual projects
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with user authentication, product management, and payment integration.",
-      image: "/project1.jpg", // Add your project images to public folder
-      techStack: ["React", "Node.js", "MongoDB", "Express"],
-      githubLink: "https://github.com/DilmikaSahan/ecommerce-project",
+      title: "Seettu Potha - Seettu Management System",
+      description: "A full-stack web application for managing traditional Seettu(rotating savings) groups.",
+      image: "/seettupotha-card.png",
+      techStack: ["Angular", "Spring-Boot", "PostgreSQL", "Twilio"],
+      githubLink: "https://github.com/DilmikaSahan/seettu-management-system",
       featured: true
     },
     {
@@ -60,10 +71,20 @@ const Projects = () => {
         </div>
         <div className="projects-grid scroll-animate">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard 
+              key={project.id} 
+              project={project} 
+              onViewMore={handleProjectView}
+            />
           ))}
         </div>
       </div>
+      
+      {/* Project Modals */}
+      <PJ_settupotha 
+        isOpen={selectedProject === 1} 
+        onClose={closeModal} 
+      />
     </section>
   );
 };
