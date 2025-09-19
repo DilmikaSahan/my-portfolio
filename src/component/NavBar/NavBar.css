@@ -35,12 +35,12 @@ li,a{
   border-radius: 24px;
   transition: background 0.2s, color 0.2s;
 }
-
+.navbar-nav .nav-link:hover {
   color: #ffc107 !important;
   background: transparent;
   box-shadow: none;
   text-decoration: none;
-
+}
 @media (max-width: 991px) {
   .navbar-nav.nav-center {
     flex-direction: column;

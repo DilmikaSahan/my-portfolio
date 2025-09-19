@@ -26,7 +26,7 @@ const PJ_settupotha = ({ isOpen, onClose }) => {
         <div className="modal-body">
           <div className="project-gallery">
             <img 
-              src="/settupotha-main.jpg" 
+              src="/SeettuPJ/seettupoth-card.png" 
               alt="SettuPotha Main Interface"
               className="main-image"
               onError={(e) => {
@@ -35,21 +35,21 @@ const PJ_settupotha = ({ isOpen, onClose }) => {
             />
             <div className="gallery-thumbnails">
               <img 
-                src="/settupotha-dashboard.jpg" 
+                src="/SeettuPJ/seettu01.png" 
                 alt="Dashboard"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Dashboard';
                 }}
               />
               <img 
-                src="/settupotha-notes.jpg" 
+                src="/SeettuPJ//PDashboard.png" 
                 alt="Notes Feature"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Notes';
                 }}
               />
               <img 
-                src="/settupotha-schedule.jpg" 
+                src="/SeettuPJ/Udashboard.png" 
                 alt="Schedule Management"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Schedule';
@@ -62,21 +62,27 @@ const PJ_settupotha = ({ isOpen, onClose }) => {
             <div className="project-overview">
               <h3>Project Overview</h3>
               <p>
-                SettuPotha is a comprehensive study management system designed to help students organize their academic life. 
-                The application provides tools for note-taking, schedule management, assignment tracking, and study progress monitoring.
+                Seettu, also known as rotating savings, is a traditional community-based financial practice in Sri Lanka where a group of people contribute a fixed amount of money regularly, 
+                and the collected amount is given to one member in each cycle until all members receive their share. While this method has been followed for decades due to its trust and community-driven nature, the manual process has several challenges.
+                Payment tracking often results in errors, missed or delayed contributions are difficult to manage, and handling multiple groups at once becomes confusing. In addition, the lack of transparency creates disputes among members, 
+                and there is currently no proper digital solution to manage these savings groups effectively.<br/><br/>
+        
+                To address these issues, we developed Seettu Potha, a digital platform designed to modernize Seettu management. The system automates payment tracking, reduces human error, 
+                and enables providers to manage multiple groups simultaneously. Members can access real-time updates about their payments and payouts, improving transparency and trust within the group. 
+                To ensure inclusivity, the platform integrates SMS notifications, allowing even users without smartphones to receive reminders and updates. With secure authentication and a scalable architecture, 
+                Seettu Potha transforms the traditional manual Seettu process into a reliable, transparent, and user-friendly digital solution.
               </p>
             </div>
 
             <div className="project-features">
               <h3>Key Features</h3>
               <ul>
-                <li><strong>Smart Note-Taking:</strong> Rich text editor with markdown support and categorization</li>
-                <li><strong>Schedule Management:</strong> Interactive calendar for classes, assignments, and study sessions</li>
-                <li><strong>Assignment Tracker:</strong> Deadline management with priority levels and notifications</li>
-                <li><strong>Study Analytics:</strong> Progress tracking and productivity insights</li>
-                <li><strong>Resource Library:</strong> File management for study materials and documents</li>
-                <li><strong>Collaboration Tools:</strong> Share notes and study groups with classmates</li>
-                <li><strong>Mobile Responsive:</strong> Works seamlessly across all devices</li>
+                <li><strong>Automated Payment Tracking:</strong> Records contributions instantly and sends reminders for upcoming or missed payments.</li>
+                <li><strong>Group Management:</strong> Supports multiple groups running in parallel, allowing providers to add members, define cycles, and track payouts.</li>
+                <li><strong>Transparency & Trust:</strong> Members can view their contributions and payout cycles in real time, ensuring accountability.</li>
+                <li><strong>SMS Notifications:</strong> Integrated with Twilio API to notify members via SMS, reaching even users with button phones.</li>
+                <li><strong>Secure Authentication:</strong> JWT-based login system for safe and reliable access.</li>
+                <li><strong>Scalable Architecture:</strong> Designed for future upgrades like report generation, multilingual support, and payment gateway integration.</li>
               </ul>
             </div>
 
@@ -86,28 +92,28 @@ const PJ_settupotha = ({ isOpen, onClose }) => {
                 <div className="tech-category">
                   <h4>Frontend</h4>
                   <ul>
-                    <li>React.js with Hooks</li>
-                    <li>Material-UI Components</li>
-                    <li>Redux for State Management</li>
-                    <li>React Router for Navigation</li>
+                    <li>Angular 17</li>
+                    <li>Angular Material Components</li>
+                    <li>Reactive Forms & Routing</li>
+                    <li>State Management with Services</li>
                   </ul>
                 </div>
                 <div className="tech-category">
                   <h4>Backend</h4>
                   <ul>
-                    <li>Node.js & Express.js</li>
-                    <li>MongoDB with Mongoose</li>
+                    <li>Spring Boot 3.2</li>
+                    <li>PostgreSQL Database</li>
+                    <li>Spring Data JPA</li>
                     <li>JWT Authentication</li>
-                    <li>RESTful API Design</li>
+                    <li>Quartz Scheduler for automated reminders</li>
                   </ul>
                 </div>
                 <div className="tech-category">
                   <h4>Additional Tools</h4>
                   <ul>
-                    <li>Socket.io for Real-time Updates</li>
-                    <li>Cloudinary for Image Storage</li>
-                    <li>Nodemailer for Notifications</li>
-                    <li>Chart.js for Analytics</li>
+                    <li>Twilio API for SMS notifications</li>
+                    <li>RESTful API design for smooth integration</li>
+                    <li>Postman for API testing and validation</li>
                   </ul>
                 </div>
               </div>
@@ -117,20 +123,23 @@ const PJ_settupotha = ({ isOpen, onClose }) => {
               <h3>Challenges & Solutions</h3>
               <div className="challenge-item">
                 <h4>Challenge:</h4>
-                <p>Implementing real-time collaboration features for study groups</p>
+                <p>In rural communities, many members still use basic button phones and do not have access to smartphones.
+                   This created a major challenge: how can they be integrated into a digital Seettu management system without leaving them behind?</p><br></br>
                 <h4>Solution:</h4>
-                <p>Integrated Socket.io for real-time synchronization of shared notes and implemented conflict resolution algorithms</p>
+                <p>We integrated an SMS notification service using Twilio API. While these users cannot access all system features like dashboards or detailed reports,
+                  they can still receive the most important updates, such as payment reminders, 
+                  joining confirmations, and payment acknowledgments. This ensures inclusivity by bridging the gap between smartphone and non-smartphone users</p>
               </div>
               <div className="challenge-item">
                 <h4>Challenge:</h4>
-                <p>Managing complex state across multiple components</p>
+                <p>Automating recurring payment reminders effectively</p><br></br>
                 <h4>Solution:</h4>
-                <p>Implemented Redux with proper store structure and created reusable action creators and reducers</p>
+                <p>Implemented Spring Quartz Scheduler to trigger scheduled notifications reliably.</p>
               </div>
             </div>
             <div className="project-links">
               <a 
-                href="https://github.com/DilmikaSahan/settupotha" 
+                href="https://github.com/DilmikaSahan/seettu-management-system" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="project-link github"
