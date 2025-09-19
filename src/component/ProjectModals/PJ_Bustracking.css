@@ -1,4 +1,3 @@
-/* PJ_settupotha.css */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -143,9 +142,9 @@
 
 .project-overview p {
   color: #555;
+  text-align: justify;
   line-height: 1.8;
   font-size: 1.1rem;
-  text-align: justify;
 }
 
 .project-features {
@@ -241,6 +240,57 @@
   margin: 0;
   line-height: 1.6;
   text-align: justify;
+}
+
+.project-workflow {
+  margin-bottom: 30px;
+}
+
+.project-workflow h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 10px;
+}
+
+.workflow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.workflow-step {
+  background: #e8f5e8;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #28a745;
+  position: relative;
+}
+
+.workflow-step h4 {
+  color: #155724;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.workflow-step p {
+  color: #6c757d;
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
+.workflow-step ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+
+.workflow-step ul li {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 5px;
 }
 
 .project-learnings {

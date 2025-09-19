@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
 import PJ_settupotha from '../ProjectModals/PJ_settupotha';
+import PJ_Bustracking from '../ProjectModals/PJ_Bustracking';
 import './Projects.css';
 
 const Projects = () => {
@@ -42,20 +43,20 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "AI ChatBot Application",
-      description: "An intelligent chatbot using natural language processing for customer service automation.",
-      image: "/project2.jpg",
-      techStack: ["Python", "TensorFlow", "Flask", "React"],
-      githubLink: "https://github.com/DilmikaSahan/ai-chatbot",
+      title: "IoT-Based Bus Tracking System",
+      description: "A prototype IoT system designed to track buses in real time.",
+      image: "/BusTrackPJ/bustracking.png",
+      techStack: ["ESP32", "Node.js", "Express.js", "MongoDB Atlas","HTML","CSS"],
+      githubLink: "https://github.com/DilmikaSahan/BusTrackingSystem",
       featured: true
     },
     {
       id: 3,
-      title: "Data Visualization Dashboard",
-      description: "Interactive dashboard for data analysis with real-time charts and filtering capabilities.",
-      image: "/project3.jpg",
-      techStack: ["Angular", "D3.js", "Spring Boot", "MySQL"],
-      githubLink: "https://github.com/DilmikaSahan/data-dashboard",
+      title: "CEB-Application – Electricity Bill Calculation System",
+      description: "A Windows Forms desktop application for calculating electricity bills based on user inputs.",
+      image: "/CEBPJ/CEBApp3.png",
+      techStack: ["C#", ".Net Framework", "Windows Forms"],
+      githubLink: "https://github.com/DilmikaSahan/CEB-Application",
       featured: false
     }
   ];
@@ -84,6 +85,10 @@ const Projects = () => {
       <PJ_settupotha 
         isOpen={selectedProject === 1} 
         onClose={closeModal} 
+      />
+      <PJ_Bustracking
+        isOpen={selectedProject === 2}
+        onClose={closeModal}
       />
     </section>
   );
