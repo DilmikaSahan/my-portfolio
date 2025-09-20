@@ -35,7 +35,7 @@ const PJ_Bustracking = ({ isOpen, onClose }) => {
             />
             <div className="gallery-thumbnails">
               <img 
-                src="/BusTrackPJ/bus_tracking_ps.jpg" 
+                src="" 
                 alt="Dashboard"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Dashboard';
@@ -49,7 +49,7 @@ const PJ_Bustracking = ({ isOpen, onClose }) => {
                 }}
               />
               <img 
-                src="/SeettuPJ/Udashboard.pn" 
+                src="" 
                 alt="Schedule Management"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Schedule';
