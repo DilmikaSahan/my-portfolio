@@ -66,7 +66,7 @@ const Contact = () => {
       */
 
       // Option 2: Mailto (Simple but opens email client)
-      const mailtoLink = `mailto:dilmikasahan@example.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      const mailtoLink = `mailto:dilmikacontact@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       )}`;
       window.location.href = mailtoLink;
@@ -99,8 +99,8 @@ const Contact = () => {
         </svg>
       ),
       label: "Email",
-      value: "dilmikasahan@example.com",
-      link: "mailto:dilmikasahan@example.com",
+      value: "dilmikacontact@gmail.com",
+      link: "mailto:dilmikacontact@gmail.com",
       color: "#ea4335"
     },
     {
@@ -171,7 +171,7 @@ const Contact = () => {
               
               {submitStatus === 'success' && (
                 <div className="status-message success">
-                   Message sent successfully! I'll get back to you soon.
+                  Failed to send message. Please try again or contact me directly.
                 </div>
               )}
               {submitStatus === 'error' && (

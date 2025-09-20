@@ -14,7 +14,7 @@ const PJ_motormate = ({ isOpen, onClose }) => {
     <div className="modal-backdrop" onClick={handleBackdropClick}>
       <div className="modal-content">
         <div className="modal-header">
-          <h2 className="modal-title">SettuPotha - Seettu Management System</h2>
+          <h2 className="modal-title">Motormate – Vehicle Service Center Management System</h2>
           <button className="modal-close" onClick={onClose}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <line x1="18" y1="6" x2="6" y2="18"></line>
