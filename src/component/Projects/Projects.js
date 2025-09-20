@@ -7,6 +7,7 @@ import './Projects.css';
 const PJ_settupotha = lazy(() => import('../ProjectModals/PJ_settupotha'));
 const PJ_Bustracking = lazy(() => import('../ProjectModals/PJ_Bustracking'));
 const CEBApp = lazy(() => import('../ProjectModals/CEBApp'));
+const PJ_motormate = lazy(() => import('../ProjectModals/PJ_motormate'));
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -64,12 +65,12 @@ const Projects = () => {
       featured: false
     },
         {
-      id: 4,
-      title: "CEB-Application – Electricity Bill Calculation System",
-      description: "A Windows Forms desktop application for calculating electricity bills based on user inputs.",
-      image: "/CEBPJ/CEBApp3.png",
-      techStack: ["C#", ".Net Framework", "Windows Forms"],
-      githubLink: "https://github.com/DilmikaSahan/CEB-Application",
+      id: "MTAPP",
+      title: "Motormate – Vehicle Service Center Management System",
+      description: "A desktop application designed to streamline vehicle service bookings and management for service centers.",
+      image: "/motormate/motormate1.png",
+      techStack: ["C++", ".Net Framework", "Windows Forms","Microsoft SQL Server"],
+      githubLink: "https://github.com/DilmikaSahan/Motormate-App",
       featured: false
     },
 
@@ -108,6 +109,10 @@ const Projects = () => {
         <CEBApp
           isOpen={selectedProject === "CEBA"}
           onClose={closeModal}
+        />
+        <PJ_motormate
+        isOpen={selectedProject==="MTAPP"}
+        onClose={closeModal}
         />
       </Suspense>
     </section>
