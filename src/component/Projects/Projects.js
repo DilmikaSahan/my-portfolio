@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import ProjectCard from './ProjectCard';
-import PJ_settupotha from '../ProjectModals/PJ_settupotha';
-import PJ_Bustracking from '../ProjectModals/PJ_Bustracking';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import './Projects.css';
+
+// Lazy load project modals to improve initial page load
+const PJ_settupotha = lazy(() => import('../ProjectModals/PJ_settupotha'));
+const PJ_Bustracking = lazy(() => import('../ProjectModals/PJ_Bustracking'));
+const CEBApp = lazy(() => import('../ProjectModals/CEBApp'));
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -33,7 +37,7 @@ const Projects = () => {
   // Sample project data - you can replace this with your actual projects
   const projects = [
     {
-      id: 1,
+      id: "STP",
       title: "Seettu Potha - Seettu Management System",
       description: "A full-stack web application for managing traditional Seettu(rotating savings) groups.",
       image: "/seettupotha-card.png",
@@ -42,7 +46,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 2,
+      id: "IBT",
       title: "IoT-Based Bus Tracking System",
       description: "A prototype IoT system designed to track buses in real time.",
       image: "/BusTrackPJ/bustracking.png",
@@ -51,14 +55,24 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 3,
+      id: "CEBA",
       title: "CEB-Application – Electricity Bill Calculation System",
       description: "A Windows Forms desktop application for calculating electricity bills based on user inputs.",
       image: "/CEBPJ/CEBApp3.png",
       techStack: ["C#", ".Net Framework", "Windows Forms"],
       githubLink: "https://github.com/DilmikaSahan/CEB-Application",
       featured: false
-    }
+    },
+        {
+      id: 4,
+      title: "CEB-Application – Electricity Bill Calculation System",
+      description: "A Windows Forms desktop application for calculating electricity bills based on user inputs.",
+      image: "/CEBPJ/CEBApp3.png",
+      techStack: ["C#", ".Net Framework", "Windows Forms"],
+      githubLink: "https://github.com/DilmikaSahan/CEB-Application",
+      featured: false
+    },
+
   ];
 
   return (
@@ -81,15 +95,21 @@ const Projects = () => {
         </div>
       </div>
       
-      {/* Project Modals */}
-      <PJ_settupotha 
-        isOpen={selectedProject === 1} 
-        onClose={closeModal} 
-      />
-      <PJ_Bustracking
-        isOpen={selectedProject === 2}
-        onClose={closeModal}
-      />
+      {/* Project Modals with Lazy Loading */}
+      <Suspense fallback={<LoadingSpinner />}>
+        <PJ_settupotha 
+          isOpen={selectedProject === "STP"} 
+          onClose={closeModal} 
+        />
+        <PJ_Bustracking
+          isOpen={selectedProject === "IBT"}
+          onClose={closeModal}
+        />
+        <CEBApp
+          isOpen={selectedProject === "CEBA"}
+          onClose={closeModal}
+        />
+      </Suspense>
     </section>
   );
 };

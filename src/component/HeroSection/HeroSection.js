@@ -33,7 +33,15 @@ const HeroSection = () => {
             <span className="bubble b7"></span>
             <span className="bubble b8"></span>
           </div>
-          <img src={process.env.PUBLIC_URL + '/my image 01 bg removed.PNG'} alt="Dilmika Sahan" className="hero-image" />
+          <img 
+            src={process.env.PUBLIC_URL + '/my image 01 bg removed.PNG'} 
+            alt="Dilmika Sahan" 
+            className="hero-image"
+            loading="lazy"
+            onError={(e) => {
+              e.target.style.display = 'none';
+            }}
+          />
         </div>
       </div>
     </section>
