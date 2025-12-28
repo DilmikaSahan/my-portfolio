@@ -111,7 +111,7 @@ const Contact = () => {
       ),
       label: "LinkedIn",
       value: "Dilmika Sahan",
-      link: "https://www.linkedin.com/in/dilmika-sahan-509a202b6/",
+      link: "https://www.linkedin.com/in/dilmika-sahan-in",
       color: "#0077b5"
     },
     {

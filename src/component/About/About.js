@@ -23,22 +23,28 @@ const About = () => {
           <div className="about-text">
             <h2 className="about-title scroll-animate">About Me</h2>
             <p className="about-description scroll-animate">
-                I am an undergraduate at the University of Sri Jayewardenepura, Faculty of Technology, pursuing a Bachelor of Information and Communication Technology (BICT) (Honors) 
-                degree with a focus on Software Technology. I am passionate about coding, problem-solving, and the exciting fields of
-                Artificial Intelligence (AI) and Machine Learning (ML).
+              Full-stack software engineer specializing in Java Spring Boot and
+              React.js/Angular for enterprise web applications and software
+              solutions. Experienced in Spring Boot microservice architectures,
+              Python, Agentic AI systems, OpenAI API integrations and
+              machine learning. Passionate about solving real-world problems
+              and building impactful, reliable software products.
             </p>
             <div className="about-highlights scroll-animate">
               <div className="highlight-item">
                 <h4>Education</h4>
-                <p>University of Sri Jayewardenepura</p>
+                <p>
+                  BICT (Hons) in Software Technology, Faculty of Technology,
+                  University of Sri Jayewardenepura
+                </p>
               </div>
               <div className="highlight-item">
                 <h4>Focus Areas</h4>
-                <p>AI/ML, Full-Stack Development</p>
+                <p>Full-stack engineering, AI/ML, Agentic AI systems</p>
               </div>
               <div className="highlight-item">
                 <h4>Languages & Frameworks</h4>
-                <p>Java, Spring Boot, Angular, Python</p>
+                <p>Java, Spring Boot, React, Angular, Python</p>
               </div>
             </div>
           </div>

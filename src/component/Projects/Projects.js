@@ -7,6 +7,10 @@ const PJ_settupotha = lazy(() => import('../ProjectModals/PJ_settupotha'));
 const PJ_Bustracking = lazy(() => import('../ProjectModals/PJ_Bustracking'));
 const CEBApp = lazy(() => import('../ProjectModals/CEBApp'));
 const PJ_motormate = lazy(() => import('../ProjectModals/PJ_motormate'));
+const PJ_OrderBridge = lazy(() => import('../ProjectModals/PJ_OrderBridge'));
+const PJ_WatchFoodLanka = lazy(() => import('../ProjectModals/PJ_WatchFoodLanka'));
+const PJ_RestaurantFeedback = lazy(() => import('../ProjectModals/PJ_RestaurantFeedback'));
+const PJ_SonicPrime = lazy(() => import('../ProjectModals/PJ_SonicPrime'));
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -133,6 +137,14 @@ const Projects = () => {
       
       {/* Project Modals with Lazy Loading */}
       <Suspense fallback={<LoadingSpinner />}>
+        <PJ_WatchFoodLanka
+          isOpen={selectedProject === "WATCHFOOD"}
+          onClose={closeModal}
+        />
+        <PJ_OrderBridge
+          isOpen={selectedProject === "ORDERBRD"}
+          onClose={closeModal}
+        />
         <PJ_settupotha 
           isOpen={selectedProject === "STP"} 
           onClose={closeModal} 
@@ -148,6 +160,14 @@ const Projects = () => {
         <PJ_motormate
         isOpen={selectedProject==="MTAPP"}
         onClose={closeModal}
+        />
+        <PJ_RestaurantFeedback
+          isOpen={selectedProject === "RFBS"}
+          onClose={closeModal}
+        />
+        <PJ_SonicPrime
+          isOpen={selectedProject === "SONICPRM"}
+          onClose={closeModal}
         />
       </Suspense>
     </section>
