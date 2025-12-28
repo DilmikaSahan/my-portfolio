@@ -26,7 +26,7 @@ const PJ_settupotha = ({ isOpen, onClose }) => {
         <div className="modal-body">
           <div className="project-gallery">
             <img 
-              src="/SeettuPJ/seettupoth-card.png" 
+              src="/SeettuPJ/seettupoth-card.webp" 
               alt="SettuPotha Main Interface"
               className="main-image"
               onError={(e) => {
@@ -35,21 +35,21 @@ const PJ_settupotha = ({ isOpen, onClose }) => {
             />
             <div className="gallery-thumbnails">
               <img 
-                src="/SeettuPJ/seettu01.png" 
+                src="/SeettuPJ/seettu01.webp" 
                 alt="Dashboard"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Dashboard';
                 }}
               />
               <img 
-                src="/SeettuPJ//PDashboard.png" 
+                src="/SeettuPJ//PDashboard.webp" 
                 alt="Notes Feature"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Notes';
                 }}
               />
               <img 
-                src="/SeettuPJ/Udashboard.png" 
+                src="/SeettuPJ/Udashboard.webp" 
                 alt="Schedule Management"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Schedule';

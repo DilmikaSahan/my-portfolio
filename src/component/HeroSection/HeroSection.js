@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="hero-content">
           <h1 className="hero-name">Dilmika Sahan</h1>
           <h2 className="hero-title">
-            <span className="animated-text">Undergraduate, Software Developer</span>
+            <span className="animated-text">Undergraduate, Full-Stack Developer</span>
           </h2>
           <p className="hero-desc animated-desc">
             Undergraduate at University of Sri Jayewardenepura |Aspiring AI/ML & Data Science Enthusiast | Passionate about Coding & Problem-Solving
@@ -34,7 +34,7 @@ const HeroSection = () => {
             <span className="bubble b8"></span>
           </div>
           <img 
-            src={process.env.PUBLIC_URL + '/my image 01 bg removed.PNG'} 
+            src={process.env.PUBLIC_URL + '/my image 01 bg removed.webp'} 
             alt="Dilmika Sahan" 
             className="hero-image"
             loading="lazy"

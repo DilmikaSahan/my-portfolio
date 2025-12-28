@@ -26,7 +26,7 @@ const PJ_motormate = ({ isOpen, onClose }) => {
         <div className="modal-body">
           <div className="project-gallery">
             <img 
-              src="motormate/motormate1.png" 
+              src="motormate/motormate1.webp" 
               alt="Motormate Main Interface"
               className="main-image"
               onError={(e) => {
@@ -35,21 +35,21 @@ const PJ_motormate = ({ isOpen, onClose }) => {
             />
             <div className="gallery-thumbnails">
               <img 
-                src="motormate/motormate2.png" 
+                src="motormate/motormate2.webp" 
                 alt="Dashboard"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Dashboard';
                 }}
               />
               <img 
-                src="motormate/motormate3.png" 
+                src="motormate/motormate3.webp" 
                 alt="Notes Feature"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Notes';
                 }}
               />
               <img 
-                src="motormate/motormate4.png" 
+                src="motormate/motormate4.webp" 
                 alt="Schedule Management"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Schedule';
