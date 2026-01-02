@@ -146,7 +146,8 @@
 }
 
 .contact-card:hover .contact-icon svg {
-  color: var(--card-color, #ffffff);
+  /* Keep high contrast icon color on hover so it doesn't disappear */
+  color: #ffffff;
   transform: scale(1.1);
 }
 

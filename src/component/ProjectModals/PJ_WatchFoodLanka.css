@@ -1,1 +1,36 @@
 @import './CEBApp.css';
+
+.project-gallery .main-image {
+	width: 100%;
+	max-height: none;
+	height: auto;
+	object-fit: contain;
+}
+
+.system-diagram-section {
+	margin-bottom: 30px;
+}
+
+.system-diagram-section .system-diagram {
+	width: 100%;
+	max-height: none;
+	height: auto;
+	object-fit: contain;
+}
+
+.linkedin-links {
+	margin-bottom: 30px;
+	justify-content: flex-start;
+	padding-top: 0;
+	border-top: none;
+	flex-wrap: wrap;
+}
+
+.project-link.linkedin {
+	background: #0a66c2;
+	color: #fff;
+}
+
+.project-link.linkedin:hover {
+	background: #004182;
+}

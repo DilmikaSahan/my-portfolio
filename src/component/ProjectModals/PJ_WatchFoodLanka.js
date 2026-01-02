@@ -26,7 +26,7 @@ const PJ_WatchFoodLanka = ({ isOpen, onClose }) => {
         <div className="modal-body">
           <div className="project-gallery">
             <img
-              src="/orderbird/ordbrd1.png"
+              src="/Watchfood/watchFood.webp"
               alt="WatchFood Lanka UI"
               className="main-image"
               onError={(e) => {
@@ -45,6 +45,18 @@ const PJ_WatchFoodLanka = ({ isOpen, onClose }) => {
               </p>
             </div>
 
+            <div className="system-diagram-section">
+              <h3>System Architecture Diagram</h3>
+              <img
+                src="/Watchfood/watchfoodLanka.webp"
+                alt="WatchFood Lanka System Diagram"
+                className="main-image system-diagram"
+                onError={(e) => {
+                  e.target.src = 'https://via.placeholder.com/800x400/020617/ffffff?text=WatchFood+Lanka+System+Diagram';
+                }}
+              />
+            </div>
+
             <div className="project-features">
               <h3>Key Features</h3>
               <ul>
@@ -55,6 +67,26 @@ const PJ_WatchFoodLanka = ({ isOpen, onClose }) => {
                 <li><strong>File Storage:</strong> Azure Blob Storage for storing complaint images and attachments.</li>
                 <li><strong>Scalable Messaging:</strong> Apache Kafka is used for reliable, asynchronous communication between services.</li>
               </ul>
+            </div>
+
+            <div className="project-links linkedin-links">
+              <a
+                href="https://www.linkedin.com/posts/dilmika-sahan-in_petproject-watchfoodlanka-aiengineering-activity-7411688344989908992-f-zZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEv4PNkBn0DRgvocOj0OJjSu22Fz-N-BmKI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link linkedin"
+              >
+                LinkedIn Post – WatchFood Lanka (1)
+              </a>
+              <a
+                href="https://www.linkedin.com/posts/dilmika-sahan-in_watchfoodlanka-demo-petproject-activity-7411691446979948545-pvl1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEv4PNkBn0DRgvocOj0OJjSu22Fz-N-BmKI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link linkedin"
+              >
+                LinkedIn Post – WatchFood Lanka (2)
+              </a>
+              
             </div>
 
             <div className="tech-implementation">
@@ -84,7 +116,6 @@ const PJ_WatchFoodLanka = ({ isOpen, onClose }) => {
                     <li>Python</li>
                     <li>FastAPI</li>
                     <li>PyTorch-based NLP models for complaint classification</li>
-                    <li>Deployed as a separate microservice</li>
                   </ul>
                 </div>
               </div>
@@ -92,7 +123,7 @@ const PJ_WatchFoodLanka = ({ isOpen, onClose }) => {
 
             <div className="project-links">
               <a
-                href="https://github.com/DilmikaSahan/foodwatch-lanka-backend"
+                href="https://github.com/DilmikaSahan/watchFood-lanka-backend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link github"
@@ -103,7 +134,7 @@ const PJ_WatchFoodLanka = ({ isOpen, onClose }) => {
                 Backend Repository
               </a>
               <a
-                href="#"
+                href="https://github.com/DilmikaSahan/watchFood-lanka-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link github"
@@ -114,7 +145,7 @@ const PJ_WatchFoodLanka = ({ isOpen, onClose }) => {
                 Frontend Repository
               </a>
               <a
-                href="#"
+                href="https://github.com/DilmikaSahan/complaint-system-ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link github"

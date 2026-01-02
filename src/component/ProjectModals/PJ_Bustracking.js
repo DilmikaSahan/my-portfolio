@@ -26,36 +26,13 @@ const PJ_Bustracking = ({ isOpen, onClose }) => {
         <div className="modal-body">
           <div className="project-gallery">
             <img 
-              src="/BusTrackPJ/bustracking.png" 
+              src="/BusTrackPJ/bustracking.webp" 
               alt="Bustracking Main Interface"
               className="main-image"
               onError={(e) => {
                 e.target.src = 'https://via.placeholder.com/600x400/333/fff?text=Bustracking+Main+Interface';
               }}
             />
-            <div className="gallery-thumbnails">
-              <img 
-                src="" 
-                alt="Dashboard"
-                onError={(e) => {
-                  e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Dashboard';
-                }}
-              />
-              <img 
-                src="" 
-                alt="Notes Feature"
-                onError={(e) => {
-                  e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Notes';
-                }}
-              />
-              <img 
-                src="" 
-                alt="Schedule Management"
-                onError={(e) => {
-                  e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Schedule';
-                }}
-              />
-            </div>
           </div>
 
           <div className="project-details">

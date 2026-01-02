@@ -26,7 +26,7 @@ const PJ_OrderBridge = ({ isOpen, onClose }) => {
         <div className="modal-body">
           <div className="project-gallery">
             <img
-              src="/orderbird/ordbrd1.png"
+              src="/orderBridge/orderBridge.webp"
               alt="OrderBridge UI"
               className="main-image"
               onError={(e) => {
@@ -101,7 +101,7 @@ const PJ_OrderBridge = ({ isOpen, onClose }) => {
                 Backend Repository
               </a>
               <a
-                href="#"
+                href="https://github.com/DilmikaSahan/OrderBridge-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link github"

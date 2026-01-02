@@ -43,7 +43,7 @@ const Projects = () => {
       id: "WATCHFOOD",
       title: "WatchFood Lanka : Food Safety Complaint Management System",
       description: "A platform for reporting food-related complaints with AI-powered prioritization and microservices architecture.",
-      image: "/orderbird/ordbrd1.png",
+      image: "/Watchfood/watchFood.webp",
       techStack: ["Angular", "Spring Boot", "Apache Kafka", "Python", "FastAPI", "PyTorch (NLP)", "Keycloak", "PostgreSQL",
                   "Azure Blob Storage", "Eureka Server", "Docker", "Microservices Architecture"],
       githubLink: "https://github.com/DilmikaSahan/foodwatch-lanka-backend",
@@ -53,7 +53,7 @@ const Projects = () => {
       id: "ORDERBRD",
       title: "OrderBridge – Inventory,Product and Order Management System",
       description: " Microservices Based Order, Product and Inventory Management System",
-      image: "/orderbird/ordbrd1.png",
+      image: "/orderBridge/orderBridge.webp",
       techStack: ["Java Spring Boot", "Angular", "Apache Kafka", "Eureka Server", "Keycloak", "Prometheus", "Grafana"],
       githubLink: "https://github.com/DilmikaSahan/OrderBridge",
       featured: true
@@ -71,7 +71,7 @@ const Projects = () => {
       id: "IBT",
       title: "IoT-Based Bus Tracking System",
       description: "A prototype IoT system designed to track buses in real time.",
-      image: "/BusTrackPJ/bustracking.png",
+      image: "/BusTrackPJ/bustracking.webp",
       techStack: ["ESP32", "Node.js", "Express.js", "MongoDB Atlas","HTML","CSS"],
       githubLink: "https://github.com/DilmikaSahan/BusTrackingSystem",
       featured: true
@@ -80,7 +80,7 @@ const Projects = () => {
       id: "RFBS",
       title: "Restaurant Feedback Management System",
       description: "A full-stack web app for managing and analyzing restaurant feedback with real-time insights and admin dashboards.",
-      image: "/orderbird/ordbrd1.png",
+      image: "/feedbacks/feedback02.webp",
       techStack: [ "React", "Spring Boot", "MongoDB", "HTML", "CSS", "JavaScript", "JWT authentication", "Spring Security"],
       githubLink: "https://github.com/DilmikaSahan/hotel-feedback-system-backend",
       featured: true
@@ -89,7 +89,7 @@ const Projects = () => {
       id: "SONICPRM",
       title: "Sonic Prime Web Application",
       description: "Developed a modern React web app for Sonic Prime (Pvt) Ltd., enhancing client engagement and brand presence, with a demo deployed on Vercel.",
-      image: "/orderbird/ordbrd1.png",
+      image: "/sonicprime/sonicprime.webp",
       techStack: ["React.js", "JavaScript", "HTML", "CSS"],
       githubLink: "https://github.com/DilmikaSahan/sonic-prime-pvt-ltd",
       featured: true
@@ -98,7 +98,7 @@ const Projects = () => {
       id: "CEBA",
       title: "CEB-Application – Electricity Bill Calculation System",
       description: "A Windows Forms desktop application for calculating electricity bills based on user inputs.",
-      image: "/CEBPJ/CEBApp3.png",
+      image: "/CEBPJ/CEBApp3.webp",
       techStack: ["C#", ".Net Framework", "Windows Forms"],
       githubLink: "https://github.com/DilmikaSahan/CEB-Application",
       featured: false

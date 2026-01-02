@@ -26,7 +26,7 @@ const CEBApp = ({ isOpen, onClose }) => {
         <div className="modal-body">
           <div className="project-gallery">
             <img 
-              src="/CEBPJ/CEBApp1.png" 
+              src="/CEBPJ/CEBApp1.webp" 
               alt="CEBApp Main Interface"
               className="main-image"
               onError={(e) => {
@@ -35,21 +35,21 @@ const CEBApp = ({ isOpen, onClose }) => {
             />
             <div className="gallery-thumbnails">
               <img 
-                src="/CEBPJ/CEBApp2.png" 
+                src="/CEBPJ/CEBApp2.webp" 
                 alt="Dashboard"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Dashboard';
                 }}
               />
               <img 
-                src="/CEBPJ/CEBApp3.png" 
+                src="/CEBPJ/CEBApp3.webp" 
                 alt="Notes Feature"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Notes';
                 }}
               />
               <img 
-                src="/CEBPJ/CEBApp4.png" 
+                src="/CEBPJ/CEBApp4.webp" 
                 alt="Schedule Management"
                 onError={(e) => {
                   e.target.src = 'https://via.placeholder.com/150x100/555/fff?text=Schedule';
